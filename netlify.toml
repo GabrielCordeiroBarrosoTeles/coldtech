@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  VITE_SUPABASE_URL = "https://jallgdeqxrzjqwmchskr.supabase.co"
+  VITE_SUPABASE_ANON_KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImphbGxnZGVxeHJ6anF3bWNoc2tyIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDk4MTkyNzIsImV4cCI6MjA2NTM5NTI3Mn0.cfjUwziFrJqLKgsXWxxf3Inluqxts01uRRhKsjaDQ0o"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

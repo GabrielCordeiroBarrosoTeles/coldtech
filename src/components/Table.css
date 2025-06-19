@@ -1,0 +1,277 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.title {
+  font-size: 24px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Formulário */
+.form-container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.form-title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #555;
+}
+
+.form-input {
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.button-container {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.add-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #4CAF50 !important;
+  color: white !important;
+  border: none !important;
+  border-radius: 4px !important;
+  padding: 8px 16px !important;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.add-button:hover {
+  background-color: #45a049 !important;
+}
+
+.cancel-button {
+  background-color: #f0f0f0 !important;
+  color: #333 !important;
+  border: 1px solid #ddd !important;
+  border-radius: 4px !important;
+  padding: 8px 16px !important;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+  background-color: #e0e0e0 !important;
+}
+
+.icon {
+  margin-right: 5px;
+}
+
+/* Filtros */
+.filters-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.filter-group {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.filter-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  color: #555;
+  white-space: nowrap;
+}
+
+.filter-input, .filter-select {
+  padding: 6px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+  min-width: 150px;
+}
+
+.clear-filters-button {
+  margin-left: auto;
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.2s;
+}
+
+.clear-filters-button:hover {
+  background-color: #e0e0e0;
+}
+
+/* Tabela */
+.table-container {
+  overflow-x: auto;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.data-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.data-table th {
+  background-color: #f1f1f1;
+  padding: 12px 15px;
+  text-align: left;
+  font-weight: 600;
+  color: #333;
+  border-bottom: 2px solid #ddd;
+}
+
+.data-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.row-even {
+  background-color: #f9f9f9;
+}
+
+.row-odd {
+  background-color: #ffffff;
+}
+
+.client-name {
+  font-weight: 500;
+}
+
+.date-time, .location, .contact {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.calendar-icon, .clock-icon, .location-icon {
+  color: #666;
+}
+
+.status {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin-right: 5px;
+}
+
+.status-toggle {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.status-enviado {
+  background-color: #e6f7e6;
+  color: #2e7d32;
+}
+
+.status-enviado .status-dot {
+  background-color: #2e7d32;
+}
+
+.status-pendente {
+  background-color: #fff8e1;
+  color: #ff8f00;
+}
+
+.status-pendente .status-dot {
+  background-color: #ff8f00;
+}
+
+.actions-cell {
+  display: flex;
+  gap: 5px;
+}
+
+.edit-button {
+  background-color: transparent !important;
+  color: #2196F3 !important;
+  border: none !important;
+  cursor: pointer;
+  padding: 5px !important;
+  border-radius: 4px !important;
+  transition: background-color 0.3s;
+}
+
+.edit-button:hover {
+  background-color: rgba(33, 150, 243, 0.1) !important;
+}
+
+.delete-button {
+  background-color: transparent !important;
+  color: #f44336 !important;
+  border: none !important;
+  cursor: pointer;
+  padding: 5px !important;
+  border-radius: 4px !important;
+  transition: background-color 0.3s;
+}
+
+.delete-button:hover {
+  background-color: rgba(244, 67, 54, 0.1) !important;
+}
+
+.empty-message {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}

@@ -1,0 +1,38 @@
+[
+  {
+    "cliente": "Gabriel Silva",
+    "contato": "(85) 99123-4567",
+    "servico": "manutenção preventiva",
+    "data": "2023-11-15",
+    "time": "14:30",
+    "local": "Rua das Flores, 123, Eusébio, Fortaleza",
+    "status": "concluido"
+  },
+  {
+    "cliente": "Pedro Santos",
+    "contato": "(85) 98765-4321",
+    "servico": "manutenção corretiva",
+    "data": "2023-11-20",
+    "time": "09:45",
+    "local": "Av. Principal, 456, Centro, Fortaleza",
+    "status": "pendente"
+  },
+  {
+    "cliente": "Ana Oliveira",
+    "contato": "(85) 97654-3210",
+    "servico": "instalação de maquina",
+    "data": "2023-11-25",
+    "time": "16:00",
+    "local": "Rua Comercial, 789, Aldeota, Fortaleza",
+    "status": "concluido"
+  },
+  {
+    "cliente": "Wilton Costa",
+    "contato": "(85) 96543-2109",
+    "servico": "outros",
+    "data": "2023-12-05",
+    "time": "10:15",
+    "local": "Av. Beira Mar, 1010, Meireles, Fortaleza",
+    "status": "pendente"
+  }
+]

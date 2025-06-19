@@ -1,0 +1,150 @@
+{
+  "agendamentos": [
+    {
+      "cliente": "Gabriel Silva",
+      "contato": "(85) 99123-4567",
+      "servico": "manutenção preventiva",
+      "data": "2023-11-15",
+      "time": "14:30",
+      "local": "Rua das Flores, 123, Eusébio, Fortaleza",
+      "status": "concluido"
+    },
+    {
+      "cliente": "Pedro Santos",
+      "contato": "(85) 98765-4321",
+      "servico": "manutenção corretiva",
+      "data": "2023-11-20",
+      "time": "09:45",
+      "local": "Av. Principal, 456, Centro, Fortaleza",
+      "status": "pendente"
+    },
+    {
+      "cliente": "Ana Oliveira",
+      "contato": "(85) 97654-3210",
+      "servico": "instalação de maquina",
+      "data": "2023-11-25",
+      "time": "16:00",
+      "local": "Rua Comercial, 789, Aldeota, Fortaleza",
+      "status": "concluido"
+    },
+    {
+      "cliente": "Wilton Costa",
+      "contato": "(85) 96543-2109",
+      "servico": "outros",
+      "data": "2023-12-05",
+      "time": "10:15",
+      "local": "Av. Beira Mar, 1010, Meireles, Fortaleza",
+      "status": "pendente"
+    }
+  ],
+  "clientes": [
+    {
+      "id": 1,
+      "nome": "Gabriel Silva",
+      "contato": "(85) 99123-4567",
+      "endereco": "Rua das Flores, 123, Eusébio, Fortaleza",
+      "historico": [
+        {
+          "data": "2023-11-15",
+          "servico": "manutenção preventiva",
+          "status": "concluido"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "nome": "Pedro Santos",
+      "contato": "(85) 98765-4321",
+      "endereco": "Av. Principal, 456, Centro, Fortaleza",
+      "historico": [
+        {
+          "data": "2023-11-20",
+          "servico": "manutenção corretiva",
+          "status": "pendente"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "nome": "Ana Oliveira",
+      "contato": "(85) 97654-3210",
+      "endereco": "Rua Comercial, 789, Aldeota, Fortaleza",
+      "historico": [
+        {
+          "data": "2023-11-25",
+          "servico": "instalação de maquina",
+          "status": "concluido"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "nome": "Wilton Costa",
+      "contato": "(85) 96543-2109",
+      "endereco": "Av. Beira Mar, 1010, Meireles, Fortaleza",
+      "historico": [
+        {
+          "data": "2023-12-05",
+          "servico": "outros",
+          "status": "pendente"
+        }
+      ]
+    }
+  ],
+  "servicos": [
+    {
+      "id": 1,
+      "tipo": "manutenção preventiva",
+      "descricao": "Verificação e manutenção periódica para prevenir problemas",
+      "preco_base": 150.00
+    },
+    {
+      "id": 2,
+      "tipo": "manutenção corretiva",
+      "descricao": "Reparo de equipamentos com defeito",
+      "preco_base": 200.00
+    },
+    {
+      "id": 3,
+      "tipo": "instalação de maquina",
+      "descricao": "Instalação e configuração de novos equipamentos",
+      "preco_base": 250.00
+    },
+    {
+      "id": 4,
+      "tipo": "outros",
+      "descricao": "Outros serviços personalizados",
+      "preco_base": 100.00
+    }
+  ],
+  "usuarios": [
+    {
+      "id": 1,
+      "nome": "Admin",
+      "email": "admin@coldtech.com",
+      "senha": "admin123",
+      "cargo": "administrador"
+    },
+    {
+      "id": 2,
+      "nome": "Técnico",
+      "email": "tecnico@coldtech.com",
+      "senha": "tecnico123",
+      "cargo": "tecnico"
+    }
+  ],
+  "configuracoes": {
+    "empresa": {
+      "nome": "ColdTech",
+      "endereco": "Av. Washington Soares, 1000, Fortaleza, CE",
+      "telefone": "(85) 3333-4444",
+      "email": "contato@coldtech.com",
+      "horario_funcionamento": "08:00 - 18:00"
+    },
+    "sistema": {
+      "versao": "1.0.0",
+      "tema": "claro",
+      "notificacoes_ativas": true
+    }
+  }
+}

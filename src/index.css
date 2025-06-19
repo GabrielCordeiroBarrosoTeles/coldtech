@@ -1,0 +1,59 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos personalizados para seções */
+.servicos-section {
+  margin-bottom: -150px;
+  padding-bottom: 0;
+}
+
+.cta-section {
+  margin-top: -150px;
+  padding-top: 0;
+}
+
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color-scheme: light dark;
+  color: #213547;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #535bf2;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  display: block;
+}
+
+/* Removendo estilos que causam conflitos */
+body {
+  place-items: normal;
+}
+
+h1 {
+  font-size: 2em;
+  line-height: 1.1;
+}
+
+/* Removendo estilos de botão que causam conflitos */
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
