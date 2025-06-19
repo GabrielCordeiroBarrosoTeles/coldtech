@@ -16,7 +16,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="container navbar-content">
         <Link to="/" className="logo">
-          <img src="../src/assets/logo.svg" alt="ColdTech Logo" />
+          <img src="src/assets/logo.svg" alt="ColdTech Logo" />
           <span className="logo-text">ColdTech</span>
         </Link>
         <ul className="navbar-links">
