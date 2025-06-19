@@ -105,88 +105,57 @@ Se encontrar problemas com dependências durante o deploy:
 ## Arquitetura do Sistema
 
 ```mermaid
-flowchart LR
-    %% Estilos
-    style A fill:#3d85c6, color:white, stroke:#2e5d9f, stroke-width:2px
-    style P fill:#93c47d, color:white, stroke:#6b8e3e, stroke-width:2px
-    style C fill:#8e7cc3, color:white, stroke:#6a5f99, stroke-width:2px
-    style S fill:#f6b26b, color:#5c4900, stroke:#bfa63a, stroke-width:2px
-    style D fill:#e06666, color:white, stroke:#a03f3f, stroke-width:2px
-    style M fill:#f9cb9c, color:#5c3d00, stroke:#c89c56, stroke-width:2px
+flowchart TD
+    style A fill:#3d85c6, color:white
+    style P fill:#93c47d, color:white
+    style S fill:#f6b26b, color:white
+    style C fill:#8e7cc3, color:white
+    style D fill:#e06666, color:white
+    style M fill:#f9cb9c, color:black
 
-    %% Subgráficos (camadas)
-    subgraph Autenticação [Autenticação]
-        direction TB
-        AL[Login]
-        AP[PrivateRoute]
-        AC[AuthContext]
-        AS[SimpleAuthService]
-    end
+    %% Camadas da Aplicação
+    A[Autenticação] --- AL[Login]
+    A --- AP[PrivateRoute]
+    A --- AC[AuthContext]
+    A --- AS[SimpleAuthService]
 
-    subgraph Páginas [Páginas]
-        direction TB
-        PD[Dashboard]
-        PA[Agendamentos]
-        PC[Clientes]
-        PS[Serviços]
-        PH[HomePage]
-    end
+    P[Páginas] --- PD[Dashboard]
+    P --- PA[Agendamentos]
+    P --- PC[Clientes]
+    P --- PS[Serviços]
+    P --- PH[HomePage]
 
-    subgraph Componentes [Componentes]
-        direction TB
-        CN[Navbar]
-        CS[Sidebar]
-        CT[Table]
-        CM[ContactModal]
-        CSM[SchedulingModal]
-    end
+    C[Componentes] --- CN[Navbar]
+    C --- CS[Sidebar]
+    C --- CT[Table]
+    C --- CM[ContactModal]
+    C --- CSM[SchedulingModal]
 
-    subgraph Serviços [Serviços]
-        direction TB
-        SD[DatabaseService]
-        SS[SupabaseClient]
-        SU[Utils]
-    end
+    S[Serviços] --- SD[DatabaseService]
+    S --- SS[SupabaseClient]
+    S --- SU[Utils]
 
-    subgraph Dados [Dados]
-        direction TB
-        DS[Schema SQL]
-        DU[Usuários SQL]
-        DJ[JSON]
-    end
+    D[Dados] --- DS[Schema SQL]
+    D --- DU[Usuários SQL]
+    D --- DJ[JSON]
 
-    subgraph Modais [Modais]
-        direction TB
-        MA[Agendamento]
-        MC[Contato]
-    end
+    M[Modais] --- MA[Agendamento]
+    M --- MC[Contato]
 
-    %% Fluxo de dados
+    %% Fluxo de Dados
     AL -->|autentica| AS
     AS -->|verifica| AC
     AP -->|protege| PD
-
     PD -->|renderiza| PA
     PD -->|renderiza| PC
     PD -->|renderiza| PS
-
     PH -->|abre| CSM
-
     CSM -->|usa| SD
     PA -->|usa| SD
     PC -->|usa| SD
     PS -->|usa| SD
-
     SD -->|conecta| SS
     SS -->|acessa| D
-
-    %% Componentes para Páginas
-    CN -.-> PD
-    CS -.-> PD
-    CT -.-> PA
-    CM -.-> MC
-    CSM -.-> MA
-
 ```
 
 ## Estrutura do Projeto
