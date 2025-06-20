@@ -334,7 +334,6 @@ const NotFoundPage = ({ openModal }) => {
 
         <div style={styles.errorNumber}>
           <h1 style={styles.errorText}>404</h1>
-          <div style={styles.errorShadow}>404</div>
         </div>
 
         <div style={styles.titleSection}>
